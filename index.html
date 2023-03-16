@@ -50,7 +50,13 @@ function clear_a() { //clears canvas
     var a_canvas = document.getElementById("a");
     a_canvas.width = a_canvas.width;
 }
-	
+
+function name_a() { //clears canvas
+    var a_canvas = document.getElementById("a");
+    var a_context = a_canvas.getContext("2d");
+    a_context.font = "30px Arial";
+    a_context.fillText("Sandy",10,50);
+}
 </script>
 
 
@@ -100,7 +106,8 @@ function clear_a() { //clears canvas
 	
 	<div id="buttons" class="w3-container"> <!-- element containing buttons -->
 		<a onclick="draw_a();" class="w3-btn w3-black"> Rectangle </a> <!-- draws a rectangle on canvas when clicked -->
-		<a onclick="clear_a();" class="w3-btn w3-black"> Clear </a>
+		<a onclick="name_a();" class="w3-btn w3-black"> Name </a> <!-- writes my name on canvas when clicked -->
+		<a onclick="clear_a();" class="w3-btn w3-black"> Clear </a> <!-- clears canvas -->
 	</div> <!-- end of buttons body text -->
 </div> <!-- end of first page design -->
 		

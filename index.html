@@ -109,13 +109,12 @@ function image_a() { //adds image on canvas
 	
 	<div id="content" class="w3-container"> <!-- element containing canavs -->
 		<canvas id="a" width="400" height="325" style="border:1px solid #000000;"></canvas> <!-- creates canvas -->
-		<img id="plushie" src="plush"> <!-- image source -->
 	</div> <!-- end of canvas body text -->
 	
 	<div id="buttons" class="w3-container"> <!-- element containing buttons -->
 		<a onclick="draw_a();" class="w3-btn w3-black"> Rectangle </a> <!-- draws a rectangle on canvas when clicked -->
 		<a onclick="name_a();" class="w3-btn w3-black"> Name </a> <!-- writes my name on canvas when clicked -->
-		<a onclick="image_a();" class="w3-btn w3-black"> Image </a> <!-- adds image canvas -->
+		<a img id="plushie" src="plush" onclick="image_a();" class="w3-btn w3-black"> Image </a> <!-- adds image canvas -->
 		<a onclick="clear_a();" class="w3-btn w3-black"> Clear </a> <!-- clears canvas -->
 	</div> <!-- end of buttons body text -->
 </div> <!-- end of first page design -->
